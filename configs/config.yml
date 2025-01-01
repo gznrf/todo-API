@@ -6,5 +6,9 @@ db:
   username: "postgres"
   dbname: "postgres"
   sslmode: "disable"
-  
+
 salt: "jjKJwADA21jdas012d"
+
+token:
+  key: "fwijwa3IJ$oof90fsavsfSADqiwe"
+  TTL: "12 * time.Hour"
