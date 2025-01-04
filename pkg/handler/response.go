@@ -6,6 +6,10 @@ import (
 	"net/http"
 )
 
+type statusResponse struct {
+	Status string `json:"status"`
+}
+
 func WriteJson(w http.ResponseWriter, status int, v any) error {
 	w.Header().Add("Content-Type", "application/json")
 	w.WriteHeader(status)
